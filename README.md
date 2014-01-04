@@ -1,5 +1,7 @@
 # Fotoapp Uploader
 
+[![Build Status](https://travis-ci.org/fotoapp/uploader.png?branch=master)](https://travis-ci.org/fotoapp/uploader)
+
 ## What is it?
 
 Uploader exists to serve a single purpose: get your photos into the cloud.
