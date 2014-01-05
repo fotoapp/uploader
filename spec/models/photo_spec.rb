@@ -45,5 +45,15 @@ describe Uploader::Photo do
         end.to raise_error
       end
     end
+
+    context 'non image file' do
+
+      it 'raises an error' do
+        expect do
+          described_class
+            .new(fixture_path(File.join('images', 'notanimage.txt.jpg')))
+        end.to raise_error
+      end
+    end
   end
 end
