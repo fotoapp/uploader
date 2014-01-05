@@ -7,3 +7,7 @@ RSpec.configure do |config|
   config.filter_run :focus
   config.order = 'random'
 end
+
+def fixture_path(path)
+  File.expand_path(File.join('fixtures', path), File.dirname(__FILE__))
+end
