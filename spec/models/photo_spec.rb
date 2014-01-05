@@ -36,5 +36,14 @@ describe Uploader::Photo do
         end.to raise_error
       end
     end
+
+    context 'directory' do
+
+      it 'raises an error' do
+        expect do
+          described_class.new(fixture_path('images'))
+        end.to raise_error
+      end
+    end
   end
 end

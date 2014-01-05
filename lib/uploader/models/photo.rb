@@ -2,7 +2,7 @@
 class Uploader::Photo
   def initialize(path)
     path = Pathname.new(path)
-    fail unless path.exist?
+    fail unless path.exist? && path.file?
     @path = path
   end
 
