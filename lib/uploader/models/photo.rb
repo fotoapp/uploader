@@ -1,6 +1,8 @@
 # A photo to be uploaded to the cloud
 class Uploader::Photo
   def initialize(path)
+    path = Pathname.new(path)
+    fail unless path.exist?
     @path = path
   end
 
