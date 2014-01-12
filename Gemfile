@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem 'fog'
+
 group :development do
   gem 'guard-rspec'
   gem 'guard-rubocop'
