@@ -1,3 +1,3 @@
 require 'uploader/version'
 
-require 'uploader/models/photo'
+require 'uploader/photo'
